@@ -20,7 +20,11 @@ module.exports = {
         'movie-melon' : '#ffd369',
         'movie-grey'  : '#dddddd',
         'movie-white' : '#f7f7f7',
-      }
+      },
+
+      spacing: {
+        128: '32rem',
+      },
     },
   },
   plugins: [],
