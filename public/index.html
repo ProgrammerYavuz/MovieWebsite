@@ -3,11 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold">
-    Hello world!
-  </h1>
+
+  <!-- Header Section -->
+  <header class="bg-black py-12 text-movie-grey font-gemunu uppercase">
+    <!-- Header Container -->
+    <div class="container flex items-center justify-between space-x-16">
+      <!-- Logo -->
+      <a href="#" class="text-6xl font-bold text-transparent bg-gradient-to-t bg-clip-text from-movie-red to-movie-grey">Logo</a>
+      <!-- Navigation -->
+      <nav class="flex justify-between flex-1">
+        <!-- Menu -->
+        <div class="flex items-center text-lg space-x-8">
+          <a href="#" class="hover:text-movie-melon transition duration-500">moives</a>
+          <a href="#" class="hover:text-movie-melon transition duration-500">celebrities</a>
+          <a href="#" class="hover:text-movie-melon transition duration-500">blog</a>
+          <a href="#" class="hover:text-movie-melon transition duration-500">news</a>
+          <a href="#" class="hover:text-movie-melon transition duration-500">about</a>
+        </div>
+        <!-- Login Area -->
+        <div class="flex items-center space-x-8">
+          <!-- Search Area -->
+          <form>
+            <div class=" group border-r px-4 mx-4 py-1 border-movie-red" >
+              <input type="text" class="opacity-0 group-hover:opacity-100 bg-black border-b border-movie-red focus:outline-none w-44 transition duration-500">
+              <button class="transition duration-500">
+                <i class="fas fa-search group-hover:text-movie-red transition duration-500"></i>
+              </button>
+            </div>
+          </form>
+          <!-- Signup Area -->
+          <div class="flex items-center space-x-8 text-lg">
+            <a href="#">Login</a>
+            <a href="#" class="bg-movie-red px-3 py-1 hover:bg-rose-600 hover:text-movie-grey cursor-pointer transition duration-500">Sign up</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
 </body>
 </html>
